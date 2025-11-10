@@ -7,20 +7,25 @@ body {
     justify-content: center;
     padding: 20px;
     font-family: 'Poppins', sans-serif; /* Modern, beautiful font */
-    background-image: url('https://www.transparenttextures.com/patterns/canvas.png'); /* Subtle texture for premium feel (optional, remove if not needed) */
-    background-size: cover;
+    /* background-image: url('Logo.jpeg'); Subtle texture for premium feel (optional, remove if not needed) */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
 }
 
 /* Card Container */
 .main-card {
+    position: relative;
+    background: 
+        linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), 
+        url("Logo.jpeg") center/cover no-repeat;
+    background-blend-mode: overlay;
     max-width: 800px;
-    border: none;
     border-radius: 25px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15); /* Deep shadow for 3D effect */
-    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white for elegance */
-    animation: fadeIn 1.2s ease-in-out; /* Smooth page load animation */
-    transition: box-shadow 0.3s ease; /* For hover on card */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1.2s ease-in-out;
+    transition: box-shadow 0.3s ease;
 }
+
 
 .main-card:hover {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2); /* Glow effect on card hover */
@@ -48,13 +53,13 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: 700;
-    color: #222;
+    color: #ffffff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle depth */
 }
 
 p {
     font-size: 1.1rem;
-    color: #555;
+    color: #ffffff;
     line-height: 1.5;
 }
 
